@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Inject our app into the html -->
+<html ng-app='app'>
+    <head>
+        <meta charset="utf-8">
+        <title>My Full MEAN Friends</title>
+        <!-- Angular lives in bower_components, or in an online CDN -->
+        <!-- Remember - files from the bower_components and client dirs can only be served if the static folders are being served on the server with app.use() -->
+        <script src="./angular/angular.js"></script>
+        <script src="./angular-route/angular-route.js"></script>
+        <!-- <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script> -->
+
+        <!-- Source to your angular application code -->
+        <script src="./js/app.js" charset="utf-8"></script>
+
+        <!-- If using factories -->
+        <!-- <script src='../bower_components/js/factory/friendFactory.js'></script> -->
+        <!-- END your angular application code -->
+    </head>
+    <body>
+        <h1>Welcome to Full MEAN Friends</h1>
+        <div ng-view ="">
+        </div>
+    </body>
+</html>
